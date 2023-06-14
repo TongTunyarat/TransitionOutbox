@@ -1,4 +1,4 @@
-package com.example.outbox1.Entity;
+package com.example.outbox1.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -25,7 +25,7 @@ public class OutboxEntity {
     @Column(name = "channel")
     private String channel;
 
-    @Column(name = "channel",columnDefinition = "TIMESTAMP")
+    @Column(name = "createdAt",columnDefinition = "TIMESTAMP")
     private LocalDateTime createdAt;
 }
 
